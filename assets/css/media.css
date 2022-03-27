@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px){
+	.menu li:not(.burger) {
+		display: none;
+	}
+	.burger {
+		display: block;
+	}
+	.navbar {
+		background-color: #202238;
+		padding: 10px 0 9.78px 0;
+	}
+	.header {
+		padding-top: 0;
+	}
+	.filter {
+		order: -1;
+		margin-bottom: 40px;
+	}
+	.filter select {
+		width: 100%;
+		margin-top: 20px;
+		font-size: 16px;
+	}
+	.gallery .img a {    
+    	left: 39%;
+    }
+    h1 {
+		font-size: 50px;
+	}
+}
+@media screen and (max-width: 425px) {
+	h1 {
+		font-size: 21px;
+	}
+	.person {
+		padding-bottom: 20px;
+	}
+	#press_leases, #all {
+		margin: 0;
+		margin-top: 10px;
+	}
+	.categories p {
+		padding: 3px 18px;
+		text-align: center;
+	}
+	.news .title {
+		font-size: 18px;
+	}
+}
