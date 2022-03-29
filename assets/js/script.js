@@ -7,7 +7,7 @@ $(document).ready(function() {
     burger.click(function() {
         $('.menu').addClass('active');
         $('body').addClass('no_scroll');
-        $('.close').css('display', 'block');
+        close.css('display', 'block');
         $(this).css('display', 'none');
     });
     close.click(function() {
@@ -18,4 +18,8 @@ $(document).ready(function() {
     });
 });
 
+window.addEventListener("scroll", function() {
+    let navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active', window.scrollY > 50);
+});
 console.log('Web-Developer: AvoPro');

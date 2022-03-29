@@ -26,7 +26,6 @@ h1 span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 3rem;
     padding-bottom: 5rem;
 }
 .no_scroll {
@@ -36,13 +35,19 @@ h1 span {
     display: none;    
 }
 .close {
-    width: 30px;
+    width: 24px;
     float: right;
 }
 .navbar {
-    position: fixed;
     width: 100%;
     z-index: 10000;
+    padding-top: 3rem;
+}
+.navbar.active {
+    position: fixed;
+    background-color: #202238;
+    padding: 10px 0 9.78px 0;
+    transition: .6s;
 }
 .menu {
     list-style-type: none;
